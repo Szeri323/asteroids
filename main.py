@@ -36,7 +36,7 @@ def main():
         for asteroid in asteroids:
             for shot in shots:
                 if asteroid.is_colision(shot):
-                    asteroid.kill()
+                    asteroid.split()
                     shot.kill()
         screen.fill((1,1,1))
         for drawable in drawables:
